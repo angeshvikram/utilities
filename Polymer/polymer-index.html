@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+
+    <title>JS</title>
+    <!-- import latest release version of all components from polygit -->
+    <script src="https://cdn.rawgit.com/webcomponents/webcomponentsjs/master/webcomponents-lite.js"></script>
+    <link rel="stylesheet" href="css/app.css">
+
+    <!-- import custom component -->
+    <link rel="import" href="https://polygit.org/components/polymer/polymer.html">
+    <script type="text/javascript" src="app.js"></script>
+
+    <dom-module id="polymer-component">
+        <template>
+            <style>
+                p {
+                    color: red;
+                }
+            </style>
+
+            <p>Hello world and {{andWho}}!</p>
+        </template>
+    </dom-module>
+</head>
+<body>
+<polymer-component and-who="Bartek"></polymer-component>
+</body>
+</html>
